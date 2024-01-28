@@ -1,4 +1,4 @@
-package com.example.morekotlinfundamentals
+package com.example.morekotlinfundamentals.generics
 
 class FillInTheBlankQuestion(
     val questionText: String,

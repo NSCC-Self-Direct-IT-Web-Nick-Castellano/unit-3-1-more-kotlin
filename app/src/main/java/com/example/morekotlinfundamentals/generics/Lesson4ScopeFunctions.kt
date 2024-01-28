@@ -1,4 +1,4 @@
-package com.example.morekotlinfundamentals
+package com.example.morekotlinfundamentals.generics
 
 class Quiz3 : Quiz2() {
 //    // ugly way to print the questions,

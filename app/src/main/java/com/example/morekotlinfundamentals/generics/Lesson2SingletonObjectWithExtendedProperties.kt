@@ -1,4 +1,4 @@
-package com.example.morekotlinfundamentals
+package com.example.morekotlinfundamentals.generics
 
 
 //// here we learn how to use singleton objects
@@ -29,12 +29,12 @@ class Quiz {
 
 // an extended property to print the progress message
 val Quiz.StudentProgress.progressText: String
-    get() = "${answered} of ${total} answered"
+    get() = "$answered of $total answered"
 
 // an extended property to add progress brars
 fun Quiz.StudentProgress.printProgressBar() {
-    repeat(Quiz.answered) { print("▓") }
-    repeat(Quiz.total - Quiz.answered) { print("▒") }
+    repeat(answered) { print("▓") }
+    repeat(total - answered) { print("▒") }
     println()
     // we print the progress text so we can bundle all in one call
     println(Quiz.progressText)

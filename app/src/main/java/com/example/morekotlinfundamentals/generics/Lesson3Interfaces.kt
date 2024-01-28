@@ -1,4 +1,4 @@
-package com.example.morekotlinfundamentals
+package com.example.morekotlinfundamentals.generics
 
 
 interface ProgressPrintable {
@@ -18,7 +18,7 @@ open class Quiz2 : ProgressPrintable {
     }
 
     override val progressText: String
-        get() = "${answered} of ${total} answered"
+        get() = "$answered of $total answered"
 
     override fun printProgressBar() {
         repeat(Quiz.answered) { print("▓") }
